@@ -95,9 +95,9 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(24, 13);
+            this.pictureBox1.Location = new System.Drawing.Point(27, 123);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(450, 450);
+            this.pictureBox1.Size = new System.Drawing.Size(243, 249);
             this.pictureBox1.TabIndex = 8;
             this.pictureBox1.TabStop = false;
             // 
@@ -111,7 +111,7 @@
             this.panel1.Controls.Add(this.textBoxContraseña);
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.label4);
-            this.panel1.Location = new System.Drawing.Point(530, 13);
+            this.panel1.Location = new System.Drawing.Point(316, 13);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(371, 482);
             this.panel1.TabIndex = 9;
@@ -121,7 +121,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.ClientSize = new System.Drawing.Size(925, 507);
+            this.ClientSize = new System.Drawing.Size(727, 512);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.pictureBox1);
             this.Name = "Login";
