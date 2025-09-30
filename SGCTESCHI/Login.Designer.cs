@@ -32,8 +32,8 @@
             this.logo = new System.Windows.Forms.PictureBox();
             this.label3 = new System.Windows.Forms.Label();
             this.btnIniciarSesion = new System.Windows.Forms.Button();
-            this.txtBoxUsuario = new System.Windows.Forms.TextBox();
-            this.textBoxContraseña = new System.Windows.Forms.TextBox();
+            this.txtUsuario = new System.Windows.Forms.TextBox();
+            this.txtContraseña = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -72,20 +72,21 @@
             this.btnIniciarSesion.TabIndex = 5;
             this.btnIniciarSesion.Text = "Iniciar Sesion";
             this.btnIniciarSesion.UseVisualStyleBackColor = true;
+            this.btnIniciarSesion.Click += new System.EventHandler(this.btnIniciarSesion_Click);
             // 
-            // txtBoxUsuario
+            // txtUsuario
             // 
-            this.txtBoxUsuario.Location = new System.Drawing.Point(185, 186);
-            this.txtBoxUsuario.Name = "txtBoxUsuario";
-            this.txtBoxUsuario.Size = new System.Drawing.Size(169, 22);
-            this.txtBoxUsuario.TabIndex = 6;
+            this.txtUsuario.Location = new System.Drawing.Point(185, 186);
+            this.txtUsuario.Name = "txtUsuario";
+            this.txtUsuario.Size = new System.Drawing.Size(169, 22);
+            this.txtUsuario.TabIndex = 6;
             // 
-            // textBoxContraseña
+            // txtContraseña
             // 
-            this.textBoxContraseña.Location = new System.Drawing.Point(190, 236);
-            this.textBoxContraseña.Name = "textBoxContraseña";
-            this.textBoxContraseña.Size = new System.Drawing.Size(169, 22);
-            this.textBoxContraseña.TabIndex = 7;
+            this.txtContraseña.Location = new System.Drawing.Point(190, 236);
+            this.txtContraseña.Name = "txtContraseña";
+            this.txtContraseña.Size = new System.Drawing.Size(169, 22);
+            this.txtContraseña.TabIndex = 7;
             // 
             // panel1
             // 
@@ -94,9 +95,9 @@
             this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.panel1.Controls.Add(this.logo);
-            this.panel1.Controls.Add(this.txtBoxUsuario);
+            this.panel1.Controls.Add(this.txtUsuario);
             this.panel1.Controls.Add(this.btnIniciarSesion);
-            this.panel1.Controls.Add(this.textBoxContraseña);
+            this.panel1.Controls.Add(this.txtContraseña);
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Location = new System.Drawing.Point(447, 12);
@@ -150,8 +151,8 @@
         private System.Windows.Forms.PictureBox logo;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button btnIniciarSesion;
-        private System.Windows.Forms.TextBox txtBoxUsuario;
-        private System.Windows.Forms.TextBox textBoxContraseña;
+        private System.Windows.Forms.TextBox txtUsuario;
+        private System.Windows.Forms.TextBox txtContraseña;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox1;
