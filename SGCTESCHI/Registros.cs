@@ -19,7 +19,7 @@ namespace SGCTESCHI
 
         private void Registros_Load(object sender, EventArgs e)
         {
-            MessageBox.Show("Usuario registrado: " + txtUsuario.Text);
+          
         }
 
         private void label1_Click(object sender, EventArgs e)
