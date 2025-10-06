@@ -1,22 +1,23 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Drawing;
 
 namespace SGCTESCHI
 {
     public partial class SplashScreen : Form
     {
-        private Timer timer;    
+        private Timer timer;
 
         public SplashScreen()
         {
             InitializeComponent();
+
+            // Configurar transparencia
+            this.FormBorderStyle = FormBorderStyle.None;              // Sin bordes
+            this.StartPosition = FormStartPosition.CenterScreen;      // Centrado
+            this.BackColor = Color.Black;                             // Color de fondo (se puede cambiar)
+            this.TransparencyKey = this.BackColor;                    // Hace invisible el color de fondo
+            this.TopMost = true;                                      // Mantiene el splash al frente
 
             // Configurar temporizador
             timer = new Timer();
@@ -26,7 +27,6 @@ namespace SGCTESCHI
 
         private void SplashScreen_Load(object sender, EventArgs e)
         {
-            this.StartPosition = FormStartPosition.CenterScreen; // Centrar splash
             timer.Start(); // Iniciar temporizador
         }
 
@@ -35,10 +35,9 @@ namespace SGCTESCHI
             timer.Stop(); // Detener temporizador
             this.Hide();  // Ocultar splash
 
-            // Abrir formulario principal
+            // Abrir formulario principal (Login)
             Login mainForm = new Login();
             mainForm.Show();
         }
-
     }
 }
