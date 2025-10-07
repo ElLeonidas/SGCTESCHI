@@ -31,9 +31,11 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Menu));
             this.button1 = new System.Windows.Forms.Button();
             this.MenuControl = new System.Windows.Forms.Panel();
+            this.btnCerrarSesion = new System.Windows.Forms.Button();
             this.btnRegistros = new System.Windows.Forms.Button();
             this.Categorias = new System.Windows.Forms.FlowLayoutPanel();
-            this.btnCerrarSesion = new System.Windows.Forms.Button();
+            this.btnLobby = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             this.MenuControl.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -49,6 +51,8 @@
             // MenuControl
             // 
             this.MenuControl.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.MenuControl.Controls.Add(this.button2);
+            this.MenuControl.Controls.Add(this.btnLobby);
             this.MenuControl.Controls.Add(this.btnCerrarSesion);
             this.MenuControl.Controls.Add(this.btnRegistros);
             this.MenuControl.Controls.Add(this.Categorias);
@@ -57,6 +61,15 @@
             this.MenuControl.Name = "MenuControl";
             this.MenuControl.Size = new System.Drawing.Size(1479, 854);
             this.MenuControl.TabIndex = 1;
+            // 
+            // btnCerrarSesion
+            // 
+            this.btnCerrarSesion.Location = new System.Drawing.Point(1428, -1);
+            this.btnCerrarSesion.Name = "btnCerrarSesion";
+            this.btnCerrarSesion.Size = new System.Drawing.Size(50, 50);
+            this.btnCerrarSesion.TabIndex = 4;
+            this.btnCerrarSesion.UseVisualStyleBackColor = true;
+            this.btnCerrarSesion.Click += new System.EventHandler(this.btnCerrarSesion_Click);
             // 
             // btnRegistros
             // 
@@ -73,24 +86,34 @@
             this.Categorias.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Categorias.Location = new System.Drawing.Point(187, 107);
             this.Categorias.Name = "Categorias";
-            this.Categorias.Size = new System.Drawing.Size(1285, 742);
+            this.Categorias.Size = new System.Drawing.Size(1500, 1000);
             this.Categorias.TabIndex = 3;
             this.Categorias.Paint += new System.Windows.Forms.PaintEventHandler(this.Categorias_Paint);
             // 
-            // btnCerrarSesion
+            // btnLobby
             // 
-            this.btnCerrarSesion.Location = new System.Drawing.Point(1428, -1);
-            this.btnCerrarSesion.Name = "btnCerrarSesion";
-            this.btnCerrarSesion.Size = new System.Drawing.Size(50, 50);
-            this.btnCerrarSesion.TabIndex = 4;
-            this.btnCerrarSesion.UseVisualStyleBackColor = true;
-            this.btnCerrarSesion.Click += new System.EventHandler(this.btnCerrarSesion_Click);
+            this.btnLobby.Location = new System.Drawing.Point(55, 74);
+            this.btnLobby.Name = "btnLobby";
+            this.btnLobby.Size = new System.Drawing.Size(75, 23);
+            this.btnLobby.TabIndex = 0;
+            this.btnLobby.Text = "Lobby";
+            this.btnLobby.UseVisualStyleBackColor = true;
+            this.btnLobby.Click += new System.EventHandler(this.button2_Click_1);
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(55, 189);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.TabIndex = 0;
+            this.button2.Text = "button2";
+            this.button2.UseVisualStyleBackColor = true;
             // 
             // Menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1482, 850);
+            this.ClientSize = new System.Drawing.Size(1482, 953);
             this.Controls.Add(this.MenuControl);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Menu";
@@ -109,5 +132,7 @@
         private System.Windows.Forms.FlowLayoutPanel Categorias;
         private System.Windows.Forms.Button btnRegistros;
         private System.Windows.Forms.Button btnCerrarSesion;
+        private System.Windows.Forms.Button btnLobby;
+        private System.Windows.Forms.Button button2;
     }
 }

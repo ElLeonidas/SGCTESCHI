@@ -19,8 +19,8 @@ namespace SGCTESCHI
 
         private void Menu_Load(object sender, EventArgs e)
         {
-            // Opcional: aquí puedes cargar un control por defecto
-            // LoadPanel(new InicioControl());
+            // Puedes cargar el Lobby por defecto si quieres
+            // LoadPanel(new LobbyControl());
         }
 
         // 👉 Método para cargar un UserControl dentro de Categorias
@@ -31,14 +31,19 @@ namespace SGCTESCHI
             Categorias.Controls.Add(control);  // Agrega el nuevo control
         }
 
-        // 👉 Ejemplo de botón que carga el UserControl "Registros"
+        // 👉 Botón que carga el UserControl "Registros"
         private void button2_Click(object sender, EventArgs e)
         {
             LoadPanel(new Registros());   // "Registros" es tu UserControl
         }
 
+        // 👉 Botón que carga el UserControl "Lobby"
+        private void btnLobby_Click(object sender, EventArgs e)
+        {
+            LoadPanel(new Lobby());   // "LobbyControl" es tu UserControl nuevo
+        }
+
         // ❌ Este evento Paint no lo necesitas para cargar cosas
-        // Lo puedes dejar vacío o eliminarlo del diseñador
         private void Categorias_Paint(object sender, PaintEventArgs e)
         {
             // No cargar nada aquí
@@ -46,11 +51,15 @@ namespace SGCTESCHI
 
         private void btnCerrarSesion_Click(object sender, EventArgs e)
         {
-            //Funcion para cerrar sesion
+            //Funcion para cerrar sesión
             Login menu = new Login();
             menu.Show();
-
             this.Hide();
+        }
+
+        private void button2_Click_1(object sender, EventArgs e)
+        {
+            // Puedes eliminar este si no se usa
         }
     }
 }
