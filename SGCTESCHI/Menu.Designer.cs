@@ -79,7 +79,7 @@
             this.btnRegistros.TabIndex = 0;
             this.btnRegistros.Text = "Registros";
             this.btnRegistros.UseVisualStyleBackColor = true;
-            this.btnRegistros.Click += new System.EventHandler(this.button2_Click);
+            this.btnRegistros.Click += new System.EventHandler(this.btnRegistros_Click);
             // 
             // Categorias
             // 
@@ -98,7 +98,7 @@
             this.btnLobby.TabIndex = 0;
             this.btnLobby.Text = "Lobby";
             this.btnLobby.UseVisualStyleBackColor = true;
-            this.btnLobby.Click += new System.EventHandler(this.button2_Click_1);
+            this.btnLobby.Click += new System.EventHandler(this.btnLobby_Click);
             // 
             // button2
             // 

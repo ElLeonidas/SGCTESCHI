@@ -32,7 +32,7 @@ namespace SGCTESCHI
         }
 
         // 👉 Botón que carga el UserControl "Registros"
-        private void button2_Click(object sender, EventArgs e)
+        private void btnRegistros_Click(object sender, EventArgs e)
         {
             LoadPanel(new Registros());   // "Registros" es tu UserControl
         }
@@ -55,11 +55,6 @@ namespace SGCTESCHI
             Login menu = new Login();
             menu.Show();
             this.Hide();
-        }
-
-        private void button2_Click_1(object sender, EventArgs e)
-        {
-            // Puedes eliminar este si no se usa
         }
     }
 }
