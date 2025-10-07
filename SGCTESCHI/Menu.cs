@@ -61,5 +61,15 @@ namespace SGCTESCHI
         {
 
         }
+
+        private void MenuControl_Paint_1(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void Categorias_Paint_1(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
