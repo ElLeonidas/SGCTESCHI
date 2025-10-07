@@ -34,7 +34,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(491, 214);
+            this.label1.Location = new System.Drawing.Point(660, 302);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(107, 16);
             this.label1.TabIndex = 0;
@@ -46,7 +46,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.label1);
             this.Name = "Lobby";
-            this.Size = new System.Drawing.Size(889, 585);
+            this.Size = new System.Drawing.Size(1500, 1000);
+            this.Load += new System.EventHandler(this.Lobby_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -56,5 +56,10 @@ namespace SGCTESCHI
             menu.Show();
             this.Hide();
         }
+
+        private void MenuControl_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
