@@ -50,6 +50,12 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Control de Archivos.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Control de Archivos.Designer.cs">
+      <DependentUpon>Control de Archivos.cs</DependentUpon>
+    </Compile>
     <Compile Include="Lobby.cs">
       <SubType>UserControl</SubType>
     </Compile>

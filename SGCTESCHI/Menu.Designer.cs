@@ -65,18 +65,18 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(55, 189);
+            this.button2.Location = new System.Drawing.Point(25, 176);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.Size = new System.Drawing.Size(106, 45);
             this.button2.TabIndex = 0;
-            this.button2.Text = "button2";
+            this.button2.Text = "Control de Archivos";
             this.button2.UseVisualStyleBackColor = true;
             // 
             // btnLobby
             // 
-            this.btnLobby.Location = new System.Drawing.Point(55, 74);
+            this.btnLobby.Location = new System.Drawing.Point(25, 66);
             this.btnLobby.Name = "btnLobby";
-            this.btnLobby.Size = new System.Drawing.Size(75, 23);
+            this.btnLobby.Size = new System.Drawing.Size(106, 31);
             this.btnLobby.TabIndex = 0;
             this.btnLobby.Text = "Lobby";
             this.btnLobby.UseVisualStyleBackColor = true;
@@ -93,9 +93,9 @@
             // 
             // btnRegistros
             // 
-            this.btnRegistros.Location = new System.Drawing.Point(52, 127);
+            this.btnRegistros.Location = new System.Drawing.Point(25, 112);
             this.btnRegistros.Name = "btnRegistros";
-            this.btnRegistros.Size = new System.Drawing.Size(78, 36);
+            this.btnRegistros.Size = new System.Drawing.Size(106, 42);
             this.btnRegistros.TabIndex = 0;
             this.btnRegistros.Text = "Registros";
             this.btnRegistros.UseVisualStyleBackColor = true;
@@ -104,9 +104,9 @@
             // Categorias
             // 
             this.Categorias.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.Categorias.Location = new System.Drawing.Point(131, 55);
+            this.Categorias.Location = new System.Drawing.Point(210, 55);
             this.Categorias.Name = "Categorias";
-            this.Categorias.Size = new System.Drawing.Size(1347, 893);
+            this.Categorias.Size = new System.Drawing.Size(1268, 893);
             this.Categorias.TabIndex = 5;
             this.Categorias.Paint += new System.Windows.Forms.PaintEventHandler(this.Categorias_Paint_1);
             // 
