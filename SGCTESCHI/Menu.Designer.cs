@@ -31,8 +31,9 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Menu));
             this.button1 = new System.Windows.Forms.Button();
             this.MenuControl = new System.Windows.Forms.Panel();
-            this.Categorias = new System.Windows.Forms.FlowLayoutPanel();
             this.btnRegistros = new System.Windows.Forms.Button();
+            this.Categorias = new System.Windows.Forms.FlowLayoutPanel();
+            this.btnCerrarSesion = new System.Windows.Forms.Button();
             this.MenuControl.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -48,6 +49,7 @@
             // MenuControl
             // 
             this.MenuControl.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.MenuControl.Controls.Add(this.btnCerrarSesion);
             this.MenuControl.Controls.Add(this.btnRegistros);
             this.MenuControl.Controls.Add(this.Categorias);
             this.MenuControl.Controls.Add(this.button1);
@@ -56,24 +58,33 @@
             this.MenuControl.Size = new System.Drawing.Size(1479, 854);
             this.MenuControl.TabIndex = 1;
             // 
-            // Categorias
-            // 
-            this.Categorias.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.Categorias.Location = new System.Drawing.Point(187, 0);
-            this.Categorias.Name = "Categorias";
-            this.Categorias.Size = new System.Drawing.Size(1285, 849);
-            this.Categorias.TabIndex = 3;
-            this.Categorias.Paint += new System.Windows.Forms.PaintEventHandler(this.Categorias_Paint);
-            // 
             // btnRegistros
             // 
-            this.btnRegistros.Location = new System.Drawing.Point(52, 71);
+            this.btnRegistros.Location = new System.Drawing.Point(52, 127);
             this.btnRegistros.Name = "btnRegistros";
             this.btnRegistros.Size = new System.Drawing.Size(78, 36);
             this.btnRegistros.TabIndex = 0;
             this.btnRegistros.Text = "Registros";
             this.btnRegistros.UseVisualStyleBackColor = true;
             this.btnRegistros.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // Categorias
+            // 
+            this.Categorias.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Categorias.Location = new System.Drawing.Point(187, 107);
+            this.Categorias.Name = "Categorias";
+            this.Categorias.Size = new System.Drawing.Size(1285, 742);
+            this.Categorias.TabIndex = 3;
+            this.Categorias.Paint += new System.Windows.Forms.PaintEventHandler(this.Categorias_Paint);
+            // 
+            // btnCerrarSesion
+            // 
+            this.btnCerrarSesion.Location = new System.Drawing.Point(1428, -1);
+            this.btnCerrarSesion.Name = "btnCerrarSesion";
+            this.btnCerrarSesion.Size = new System.Drawing.Size(50, 50);
+            this.btnCerrarSesion.TabIndex = 4;
+            this.btnCerrarSesion.UseVisualStyleBackColor = true;
+            this.btnCerrarSesion.Click += new System.EventHandler(this.btnCerrarSesion_Click);
             // 
             // Menu
             // 
@@ -83,6 +94,7 @@
             this.Controls.Add(this.MenuControl);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Menu";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Menu";
             this.Load += new System.EventHandler(this.Menu_Load);
             this.MenuControl.ResumeLayout(false);
@@ -96,5 +108,6 @@
         private System.Windows.Forms.Panel MenuControl;
         private System.Windows.Forms.FlowLayoutPanel Categorias;
         private System.Windows.Forms.Button btnRegistros;
+        private System.Windows.Forms.Button btnCerrarSesion;
     }
 }

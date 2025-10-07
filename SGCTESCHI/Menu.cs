@@ -43,5 +43,14 @@ namespace SGCTESCHI
         {
             // No cargar nada aquí
         }
+
+        private void btnCerrarSesion_Click(object sender, EventArgs e)
+        {
+            //Funcion para cerrar sesion
+            Login menu = new Login();
+            menu.Show();
+
+            this.Hide();
+        }
     }
 }
