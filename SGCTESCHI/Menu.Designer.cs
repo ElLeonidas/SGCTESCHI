@@ -42,7 +42,7 @@
             // btnInfo
             // 
             this.btnInfo.Image = ((System.Drawing.Image)(resources.GetObject("btnInfo.Image")));
-            this.btnInfo.Location = new System.Drawing.Point(-2, 0);
+            this.btnInfo.Location = new System.Drawing.Point(-1, -1);
             this.btnInfo.Name = "btnInfo";
             this.btnInfo.Size = new System.Drawing.Size(40, 41);
             this.btnInfo.TabIndex = 0;
