@@ -29,24 +29,24 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Menu));
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnInfo = new System.Windows.Forms.Button();
             this.MenuControl = new System.Windows.Forms.Panel();
+            this.Categorias = new System.Windows.Forms.Panel();
             this.button2 = new System.Windows.Forms.Button();
             this.btnLobby = new System.Windows.Forms.Button();
             this.btnCerrarSesion = new System.Windows.Forms.Button();
             this.btnRegistros = new System.Windows.Forms.Button();
-            this.Categorias = new System.Windows.Forms.Panel();
             this.MenuControl.SuspendLayout();
             this.SuspendLayout();
             // 
-            // button1
+            // btnInfo
             // 
-            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
-            this.button1.Location = new System.Drawing.Point(-2, 0);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(40, 41);
-            this.button1.TabIndex = 0;
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnInfo.Image = ((System.Drawing.Image)(resources.GetObject("btnInfo.Image")));
+            this.btnInfo.Location = new System.Drawing.Point(-2, 0);
+            this.btnInfo.Name = "btnInfo";
+            this.btnInfo.Size = new System.Drawing.Size(40, 41);
+            this.btnInfo.TabIndex = 0;
+            this.btnInfo.UseVisualStyleBackColor = true;
             // 
             // MenuControl
             // 
@@ -56,12 +56,21 @@
             this.MenuControl.Controls.Add(this.btnLobby);
             this.MenuControl.Controls.Add(this.btnCerrarSesion);
             this.MenuControl.Controls.Add(this.btnRegistros);
-            this.MenuControl.Controls.Add(this.button1);
+            this.MenuControl.Controls.Add(this.btnInfo);
             this.MenuControl.Location = new System.Drawing.Point(0, 0);
             this.MenuControl.Name = "MenuControl";
             this.MenuControl.Size = new System.Drawing.Size(1479, 949);
             this.MenuControl.TabIndex = 1;
             this.MenuControl.Paint += new System.Windows.Forms.PaintEventHandler(this.MenuControl_Paint_1);
+            // 
+            // Categorias
+            // 
+            this.Categorias.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.Categorias.Location = new System.Drawing.Point(210, 55);
+            this.Categorias.Name = "Categorias";
+            this.Categorias.Size = new System.Drawing.Size(1268, 893);
+            this.Categorias.TabIndex = 5;
+            this.Categorias.Paint += new System.Windows.Forms.PaintEventHandler(this.Categorias_Paint_1);
             // 
             // button2
             // 
@@ -101,15 +110,6 @@
             this.btnRegistros.UseVisualStyleBackColor = true;
             this.btnRegistros.Click += new System.EventHandler(this.btnRegistros_Click);
             // 
-            // Categorias
-            // 
-            this.Categorias.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.Categorias.Location = new System.Drawing.Point(210, 55);
-            this.Categorias.Name = "Categorias";
-            this.Categorias.Size = new System.Drawing.Size(1268, 893);
-            this.Categorias.TabIndex = 5;
-            this.Categorias.Paint += new System.Windows.Forms.PaintEventHandler(this.Categorias_Paint_1);
-            // 
             // Menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -128,7 +128,7 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnInfo;
         private System.Windows.Forms.Panel MenuControl;
         private System.Windows.Forms.Button btnRegistros;
         private System.Windows.Forms.Button btnCerrarSesion;
