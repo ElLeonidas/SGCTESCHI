@@ -1,6 +1,6 @@
 ﻿namespace SGCTESCHI
 {
-    partial class ControlArchivos
+    partial class Archivos
     {
         /// <summary> 
         /// Variable del diseñador necesaria.
@@ -34,20 +34,19 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(499, 114);
+            this.label1.Location = new System.Drawing.Point(463, 155);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(159, 16);
+            this.label1.Size = new System.Drawing.Size(161, 16);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Quien me jalo mi Cabello ";
+            this.label1.Text = "Quien me Jalo mi cabello ";
             // 
-            // ControlArchivos
+            // Archivos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.label1);
-            this.Name = "ControlArchivos";
+            this.Name = "Archivos";
             this.Size = new System.Drawing.Size(1268, 893);
-            this.Load += new System.EventHandler(this.ControlArchivos_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

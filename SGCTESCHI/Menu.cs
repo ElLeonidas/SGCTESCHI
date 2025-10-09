@@ -43,7 +43,7 @@ namespace SGCTESCHI
 
         private void btnArchivos_Click(object sender, EventArgs e)
         {
-            LoadPanel(new ControlArchivos());
+            LoadPanel(new Archivos());
         }
 
         private void btnCerrarSesion_Click(object sender, EventArgs e)
@@ -52,5 +52,8 @@ namespace SGCTESCHI
             loginForm.Show();
             this.Hide();
         }
+
+        private void MenuControl_Paint_1(object sender, PaintEventArgs e) { }
+        private void Categorias_Paint_1(object sender, PaintEventArgs e) { }
     }
 }
