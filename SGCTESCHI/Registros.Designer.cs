@@ -30,13 +30,13 @@
         {
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.ID_Usuario = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Permisos = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Contraseña = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -64,18 +64,10 @@
             this.panel3.Size = new System.Drawing.Size(1237, 454);
             this.panel3.TabIndex = 1;
             // 
-            // panel2
-            // 
-            this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.panel2.Location = new System.Drawing.Point(14, 15);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1237, 357);
-            this.panel2.TabIndex = 0;
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(33, 9);
+            this.label1.Location = new System.Drawing.Point(17, 9);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(139, 16);
             this.label1.TabIndex = 0;
@@ -124,6 +116,14 @@
             this.Contraseña.MinimumWidth = 6;
             this.Contraseña.Name = "Contraseña";
             this.Contraseña.Width = 125;
+            // 
+            // panel2
+            // 
+            this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel2.Location = new System.Drawing.Point(14, 15);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(1237, 357);
+            this.panel2.TabIndex = 0;
             // 
             // Registros
             // 
