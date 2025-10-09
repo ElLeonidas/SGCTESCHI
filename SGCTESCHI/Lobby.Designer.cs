@@ -46,7 +46,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.label1);
             this.Name = "Lobby";
-            this.Size = new System.Drawing.Size(1500, 1000);
+            this.Size = new System.Drawing.Size(1268, 893);
             this.Load += new System.EventHandler(this.Lobby_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

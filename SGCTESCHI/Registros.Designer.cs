@@ -47,7 +47,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.label1);
             this.Name = "Registros";
-            this.Size = new System.Drawing.Size(1285, 849);
+            this.Size = new System.Drawing.Size(1268, 893);
             this.Load += new System.EventHandler(this.Registros_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
