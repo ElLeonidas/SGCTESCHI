@@ -71,5 +71,10 @@ namespace SGCTESCHI
         {
 
         }
+
+        private void btnArchivos_Click(object sender, EventArgs e)
+        {
+            LoadPanel(new ControlArchivos());   // "Control de Archivos" es tu UserControl nuevo
+        }
     }
 }

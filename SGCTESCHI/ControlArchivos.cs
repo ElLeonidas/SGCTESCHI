@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace SGCTESCHI
 {
-    public partial class Control_de_Archivos : UserControl
+    public partial class ControlArchivos : UserControl
     {
-        public Control_de_Archivos()
+        public ControlArchivos()
         {
             InitializeComponent();
         }
