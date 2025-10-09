@@ -19,63 +19,38 @@ namespace SGCTESCHI
 
         private void Menu_Load(object sender, EventArgs e)
         {
-            // Puedes cargar el Lobby por defecto si quieres
-            // LoadPanel(new LobbyControl());
+            // Carga por defecto el Lobby al abrir el menú
+            LoadPanel(new Lobby());
         }
 
-        // 👉 Método para cargar un UserControl dentro de Categorias
+        // 👉 Método para cargar cualquier UserControl en el panel Categorias
         private void LoadPanel(UserControl control)
         {
-            Categorias.Controls.Clear();       // Limpia el panel derecho
-            control.Dock = DockStyle.Fill;     // Se ajusta al tamaño del panel
-            Categorias.Controls.Add(control);  // Agrega el nuevo control
+            Categorias.Controls.Clear();      // Limpia el panel
+            control.Dock = DockStyle.Fill;    // Se ajusta al tamaño del panel
+            Categorias.Controls.Add(control); // Agrega el nuevo control
         }
 
-        // 👉 Botón que carga el UserControl "Registros"
-        private void btnRegistros_Click(object sender, EventArgs e)
-        {
-            LoadPanel(new Registros());   // "Registros" es tu UserControl
-        }
-
-        // 👉 Botón que carga el UserControl "Lobby"
         private void btnLobby_Click(object sender, EventArgs e)
         {
-            LoadPanel(new Lobby());   // "LobbyControl" es tu UserControl nuevo
+            LoadPanel(new Lobby());
         }
 
-        // ❌ Este evento Paint no lo necesitas para cargar cosas
-        private void Categorias_Paint(object sender, PaintEventArgs e)
+        private void btnRegistros_Click(object sender, EventArgs e)
         {
-            // No cargar nada aquí
+            LoadPanel(new Registros());
+        }
+
+        private void btnArchivos_Click(object sender, EventArgs e)
+        {
+            LoadPanel(new ControlArchivos());
         }
 
         private void btnCerrarSesion_Click(object sender, EventArgs e)
         {
-            //Funcion para cerrar sesión
-            Login menu = new Login();
-            menu.Show();
+            Login loginForm = new Login();
+            loginForm.Show();
             this.Hide();
-        }
-
-        private void MenuControl_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void MenuControl_Paint_1(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void Categorias_Paint_1(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        // 👉 Botón que carga el UserControl "ControlArchivos"
-        private void btnArchivos_Click(object sender, EventArgs e)
-        {
-            LoadPanel(new ControlArchivos());
         }
     }
 }
