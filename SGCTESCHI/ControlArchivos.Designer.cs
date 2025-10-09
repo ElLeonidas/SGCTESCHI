@@ -47,6 +47,7 @@
             this.Controls.Add(this.label1);
             this.Name = "ControlArchivos";
             this.Size = new System.Drawing.Size(1268, 893);
+            this.Load += new System.EventHandler(this.ControlArchivos_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

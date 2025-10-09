@@ -16,5 +16,10 @@ namespace SGCTESCHI
         {
             InitializeComponent();
         }
+
+        private void ControlArchivos_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
